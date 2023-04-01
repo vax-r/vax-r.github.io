@@ -1,0 +1,51 @@
+#head {
+    margin: auto;
+    background-color:darkorange;
+    height: 50px;
+    border-radius: 10px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: azure;
+}
+
+
+.col {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.col img {
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.col-8 {
+    margin: 5px;
+}
+
+#country {
+    margin: 0 auto;
+    width: 80px;
+    height: 50px;
+}
+
+h2 {
+    text-align: left;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 2px 0 2px;
+}
+
+.contact-icon:hover{
+    overflow: hidden;
+    transform: scale(1.2);
+    filter:brightness(1.5);
+}

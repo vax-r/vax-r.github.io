@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="YiShin-Cheng">
+        <meta name="description" content="YiShin-Cheng Github page">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+
+    <body>
+        <!-- <div w3-include-html="./templates/layout.html"></div> -->
+        <!-- <div w3-include-html="./templates/navbar.html"></div> -->
+        <div id="head">
+            Whooo
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/selfie.jpg">
+                </div>
+                <div class="col-8">
+                    <h2>About Me</h2>
+                    <p>
+                        <br>
+                        <h5>Name: Yi Shin Cheng</h5>
+                        <h5>Country: <img src="./images/taiwan-flag.png" id="country"></h5>
+                        <h5>Introduction:</h5>
+                        Hello, I am Yi Shin-Cheng from Taiwan.
+                        I am a student studying Computer Science, who's interested in coding, algorithms and math.<br><br>
+                        <h5>Contact Me:</h5>
+                        <a href="https://www.facebook.com/rdlxok/"><img src="images/fb.png" class="contact-icon"></a>
+                        <a href="https://www.instagram.com/yi_shin1203/?fbclid=IwAR0uCVFOUuIylvYUnp0t0izIixI_582Tz7AtCX50o6tvIArutAv_xJMDqIU"><img src="./images/ig.png" class="contact-icon"></a>
+                        <a href="https://github.com/yi-shin-cheng"><img src="./images/github.png" class="contact-icon"></a>
+                        <a href=""><img src="./images/linkedln.png" class="contact-icon"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+
+    <script>
+        //使用以下function來引入html模板
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                    /* Remove the attribute, and call this function once more: */
+                    elmnt.removeAttribute("w3-include-html");
+                    includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+                }
+            }
+            }
+
+            includeHTML();
+    </script>
+
+</html>
+
