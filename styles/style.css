@@ -49,3 +49,23 @@ h2 {
     transform: scale(1.2);
     filter:brightness(1.5);
 }
+
+body {
+    background-image: url("https://i.pinimg.com/originals/9d/cb/b0/9dcbb0fb24c66e0bdabc90ec1b8d3380.jpg");
+    /* background-repeat: no-repeat; */
+    color: azure;
+}
+
+#articles {
+    height: 500px;
+    background-color: darkorange;
+    margin-top: 125px;
+}
+
+#articles h2 {
+    text-align: center;
+}
+
+#articles ul {
+    margin: 20px;
+}
