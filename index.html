@@ -59,6 +59,7 @@
                     <h3 style="text-align: center;">Recent notes</h3>
                     <ul>
                         <li><a href="https://medium.com/@richard120310/解讀計算機編碼-課程筆記-3be0bc1d9afc">解讀計算機編碼 課程筆記</a></li>
+                        <li><a href="https://hackmd.io/ZoqloFolQQS48vd8ex8mFQ?view">開發筆記 Vue.js</a></li>
                         <li>Computational Geometry</li>
                         <li>Baysian Data Analysis</li>
                     </ul>
@@ -70,36 +71,7 @@
 
 
     <script>
-        //使用以下function來引入html模板
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /* Loop through a collection of all HTML elements: */
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                /* Make an HTTP request using the attribute value as the file name: */
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                    /* Remove the attribute, and call this function once more: */
-                    elmnt.removeAttribute("w3-include-html");
-                    includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /* Exit the function: */
-                return;
-                }
-            }
-            }
-
-            includeHTML();
+        
     </script>
 
 </html>
