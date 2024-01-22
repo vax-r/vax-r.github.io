@@ -1,41 +1,89 @@
-#head {
-    margin: auto;
-    background-color:darkorange;
-    height: 50px;
-    border-radius: 10px;
-    vertical-align: middle;
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    font-size: 30px;
-    font-style: italic;
-    color: azure;
 }
 
-
-.col {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+h1 {
+    color: #fff;
 }
 
-.col img {
-    margin: 0 auto;
-    width: 200px;
-    height: 300px;
+h2,
+h3 {
+    color: #3498db;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    max-width: 100%;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.col-8 {
-    margin: 5px;
+.resume-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-#country {
-    margin: 0 auto;
-    width: 80px;
-    height: 50px;
+.resume-link:hover {
+    background-color: #2980b9;
 }
 
-h2 {
-    text-align: left;
+.work-experience {
+    margin-bottom: 20px;
+}
+
+.repo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.repo-list li {
+    margin-bottom: 10px;
+}
+
+.repo-list a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articles-list {
+    list-style: none;
+    padding: 0;
+}
+
+.articles-list li {
+    margin-bottom: 10px;
+}
+
+.articles-list a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .contact-icon {
@@ -48,24 +96,4 @@ h2 {
     overflow: hidden;
     transform: scale(1.2);
     filter:brightness(1.5);
-}
-
-body {
-    background-image: url("https://i.pinimg.com/originals/9d/cb/b0/9dcbb0fb24c66e0bdabc90ec1b8d3380.jpg");
-    /* background-repeat: no-repeat; */
-    color: azure;
-}
-
-#articles {
-    height: 500px;
-    background-color: darkorange;
-    margin-top: 125px;
-}
-
-#articles h2 {
-    text-align: center;
-}
-
-#articles ul {
-    margin: 20px;
 }
